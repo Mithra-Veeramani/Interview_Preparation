@@ -1,0 +1,46 @@
+Interview_Preparation
+Day 1 — Problem 1: Find the longest word
+
+Concept & Purpose
+
+split(" ")-Converts the sentence into an array of words
+Length-Gets the length of a word
+for loop-Visits each word
+if condition-Checks whether the current word is longer
+let-Allows us to update the stored longest word
+
+Build the algorithm
+	1 Store the sentence.
+    2 Split the sentence into words.
+    3 Create a variable to store the longest word.
+    4 Visit every word in the array.
+    5 Compare the current word's length with the stored word's length.
+    6 If the current word is longer, update the stored word.
+    7 Print the final result.
+
+Eg : const words = sentence.trim().split(/\s+/);
+Understand the two operations:
+•	trim() removes whitespace from the beginning and end.
+•	/\s+/ matches one or more whitespace characters, so multiple spaces are treated as one separator.
+
+Day 1 — Problem 2: Palindrome checking
+
+Concept & Purpose
+- String — Stores the word or text that we want to check.
+- length — Gets the number of UTF-16 code units in a string. For ordinary English words, this matches the character count.
+- String indexing (word[i]) — Accesses an individual character using its index. Indexing starts from 0.
+- length - 1 — Gives the last index of a non-empty string.
+- for loop — Iterates through the string characters from the last index to the first.
+- let — Allows us to update the value stored in the reversed variable.
+- String concatenation (+) — Adds each character to the reversed string.
+- if...else condition — Checks whether the original and reversed strings are equal.
+- Strict equality (===) — Compares the original string and reversed string exactly, including letter case and spaces.
+Build the algorithm
+1. Accept a word from the user.
+2. Create an empty string to store the reversed word.
+3. Start a for loop from the last index of the word.
+4. Access each character using its index.
+5. Append each character to the reversed string.
+6. Compare the original word with the reversed word using ===.
+7. If both strings are equal, print that the word is a palindrome.
+8. Otherwise, print that the word is not a palindrome.

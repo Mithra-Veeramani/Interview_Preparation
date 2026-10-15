@@ -10,5 +10,5 @@ if(word===reversed){
     console.log(word, "is a palindrome");
 }
 else{
-    console.log(word, "is not a palindrome")
+    console.log(word, "is not a palindrome");
 }
