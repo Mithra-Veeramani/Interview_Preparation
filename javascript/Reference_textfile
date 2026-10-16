@@ -107,3 +107,51 @@ Understand the important operations
 - reversed = reversed + word[i] appends the current character to the new string.
 - i-- moves backward through the string.
 - No reverse() method is used. The program reverses the string manually using indexing and a loop.
+
+Problem 5 — Find the maximum count of consecutive 1s in an array
+
+Step 2: Concept & Purpose
+- Array — Stores multiple values in a single variable.
+- Array indexing (numbers[i]) — Accesses an element at a particular index.
+- length — Gets the number of elements in the array.
+- for loop — Visits every element in the array.
+- if...else condition — Decides what to do based on the current element.
+- Counter (currentCount) — Tracks the number of consecutive 1s in the current sequence.
+- Maximum tracker (maxCount) — Stores the largest consecutive count found so far.
+- let — Allows the counter and maximum values to change during the loop.
+- readline module — Accepts the user's input through the Node.js terminal.
+Step 3: Build the algorithm
+1. Accept an array of 0s and 1s from the user.
+2. Initialize currentCount to 0.
+3. Initialize maxCount to 0.
+4. Visit each element using a for loop.
+5. If the current element is 1, increment currentCount.
+6. Compare currentCount with maxCount. If it is greater, update maxCount.
+7. If the current element is 0, reset currentCount to 0, because the consecutive sequence has ended.
+8. After processing the entire array, print maxCount.
+
+Problem 6 — Find the factorial of a number
+
+Step 2: Concept & Purpose
+- Number — Stores the input number whose factorial we want to calculate.
+- for loop — Repeats multiplication for each integer from 1 through the input number.
+- Accumulator (factorial) — Stores the running product.
+- Multiplication (*) — Multiplies the current factorial value by the next integer.
+- let — Allows the factorial value to be updated.
+- if condition — Validates that the input is a non-negative integer.
+- Number() — Converts the user's text input into a number.
+- Number.isSafeInteger() — Checks whether the input is an integer within JavaScript's safe integer range.
+- readline module — Reads the number entered by the user in the terminal.
+Step 3: Build the algorithm
+1. Accept a number from the user.
+2. Convert the input into a number.
+3. Check whether it is a non-negative safe integer.
+4. Initialize factorial to 1.
+5. Start a for loop from 1 to the input number.
+6. Multiply factorial by the current loop value.
+7. Repeat until the loop reaches the input number.
+8. Print the final factorial value.
+Why initialize factorial to 1, not 0?
+Because multiplication by zero always produces zero. If we started with factorial = 0, every result would remain zero.
+One is the multiplicative identity: multiplying by 1 preserves the other number.
+
