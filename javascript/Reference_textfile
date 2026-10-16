@@ -44,3 +44,66 @@ Build the algorithm
 6. Compare the original word with the reversed word using ===.
 7. If both strings are equal, print that the word is a palindrome.
 8. Otherwise, print that the word is not a palindrome.
+
+Day 2 — Problem 3: Remove Duplicates from an Array
+Concept & Purpose
+- Array — Stores multiple values in a single variable.
+- Array indexing (numbers[i]) — Accesses an element using its index. Array indexes start from 0.
+- length — Gets the number of elements in an array.
+- for loop — Iterates through every element of the array.
+- if condition — Checks whether a particular condition is true before executing a block of code.
+- includes() — Checks whether an array already contains a specified value. Returns true or false.
+- Logical NOT (!) — Reverses a Boolean value. !true becomes false, and !false becomes true.
+- let — Allows a variable's value to be reassigned.
+- Empty array ([]) — Creates an array that can store the unique values.
+- push() — Adds a new element to the end of an array.
+- readline module — Allows the program to accept input from the user through the Node.js terminal.
+- split(/\s+/) — Splits input into separate strings using one or more whitespace characters.
+- map(Number) — Converts the input strings into numbers.
+Build the algorithm
+1. Accept numbers from the user.
+2. Split the input into individual values and convert them into numbers.
+3. Create an empty array to store unique values.
+4. Start a for loop to visit every element in the original array.
+5. Check whether the current element already exists in the unique array using includes().
+6. If the element does not exist, add it using push().
+7. If the element already exists, skip it.
+8. Print the final array containing only unique values.
+
+Understand the important operations
+- uniqueNumbers = [] initializes an empty array to collect unique values.
+- numbers[i] accesses the current element in the original array.
+- uniqueNumbers.includes(numbers[i]) checks whether the current value has already been added.
+- !uniqueNumbers.includes(numbers[i]) ensures that the value is added only if it is not already present.
+- uniqueNumbers.push(numbers[i]) adds a new, unique value to the array.
+- i++ increments the loop index so that the next element is processed.
+
+Day 2 — Problem 4: Reverse a String Without Using reverse()
+Concept & Purpose
+- String — Stores the text that we want to reverse.
+- length — Gets the number of UTF-16 code units in a string. For ordinary English words, this matches the character count.
+- String indexing (word[i]) — Accesses an individual character using its index. Indexing starts from 0.
+- length - 1 — Gives the last index of a non-empty string.
+- for loop — Iterates through the string characters from the last index to the first.
+- let — Allows us to update the value stored in the reversed variable.
+- String concatenation (+) — Joins the current character to the end of the reversed string.
+- i-- — Decreases the loop index by one during each iteration.
+- console.log() — Displays the reversed string in the terminal.
+- readline module — Allows the program to accept a string entered by the user through the terminal.
+Build the algorithm
+1. Accept a string from the user.
+2. Create an empty string to store the reversed string.
+3. Start a for loop from the last index of the original string.
+4. Access each character using its index.
+5. Append each character to the reversed string using concatenation.
+6. Decrease the index by one during each iteration until index 0 is processed.
+7. Print the reversed string.
+
+Understand the important operations
+- let reversed = "" initializes an empty string to store the result.
+- word.length - 1 starts the loop at the last character's index.
+- i >= 0 ensures that the first character at index 0 is also processed.
+- word[i] retrieves the character at the current index.
+- reversed = reversed + word[i] appends the current character to the new string.
+- i-- moves backward through the string.
+- No reverse() method is used. The program reverses the string manually using indexing and a loop.
